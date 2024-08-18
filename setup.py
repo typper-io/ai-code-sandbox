@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="ai-code-sandbox",
     version="0.1.0",
-    author="João Barros",
-    author_email="augustoj311@gmail.com",
+    author="Typper, Corp.",
+    author_email="contact@typper.io",
     description="A secure sandbox for running AI-generated code",
     long_description=long_description,
     long_description_content_type="text/markdown",
