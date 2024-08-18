@@ -11,7 +11,7 @@ setup(
     description="A secure sandbox for running AI-generated code",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/ai-code-sandbox",
+    url="https://github.com/typper-io/ai-code-sandbox",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
