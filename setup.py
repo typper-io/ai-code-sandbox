@@ -8,7 +8,7 @@ setup(
     version="0.1.0",
     author="Typper, Corp.",
     author_email="contact@typper.io",
-    description="A secure sandbox for running AI-generated code",
+    description="Secure Python sandbox for AI/ML code execution using Docker. Run LLM outputs safely.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/typper-io/ai-code-sandbox",
