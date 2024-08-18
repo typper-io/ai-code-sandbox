@@ -1,0 +1,8 @@
+venv
+Dockerfile
+*.egg-info
+dist
+__pycache__
+example.py
+.pytest_cache
+docker-compose.yml
