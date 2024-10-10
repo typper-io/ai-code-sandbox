@@ -66,7 +66,7 @@ class AICodeSandbox:
 
         Args:
             filename (str): Name of the file to create or overwrite.
-            content (str): Content to write to the file.
+            content (str or bytes): Content to write to the file.
 
         Raises:
             Exception: If writing to the file fails.
@@ -80,7 +80,10 @@ class AICodeSandbox:
 
         tar_stream = io.BytesIO()
         with tarfile.open(fileobj=tar_stream, mode='w') as tar:
-            file_data = content.encode('utf-8')
+            if isinstance(content, str):
+                file_data = content.encode('utf-8')
+            else:
+                file_data = content
             tarinfo = tarfile.TarInfo(name=filename)
             tarinfo.size = len(file_data)
             tar.addfile(tarinfo, io.BytesIO(file_data))
